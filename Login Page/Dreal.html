@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Dreal.css" />
+    <title>Dreal</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-container">
+          <div class="logo-section">
+            <!--Logo Image Section-->
+            <img src="Dolly.png" alt="company-logo" class="website-logo" />
+            <!--Company Name Section-->
+            <h1 class="company-name">Dreal</h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#About">About</a></li>
+              <li><a href="create.html">Create Account</a></li>
+              <li><a href="Dreallogin.html">Login</a></li>
+              <li><a href="#Socials">Socials</a></li>
+              <li><a href="#Support">Support</a></li>
+              <li><a href="#Features">Feature</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+     <main class="container">          
+      <section id="Home" class="hero">
+        <h1>WELCOME TO Dreal</h1>
+      <div class="dreal-content">
+        <p>Your quick on/off ramp website<br>
+        Swap your digtal asset to your currency easily</p>
+      </div>
+      </section>
+
+      <!--Image With Overlay Text Section-->
+      <section id="About" class="image-overlay-section">
+      <div class="overlay-image-section">
+      <img src="Dollyszn.jpg" alt="Peace" class="overlay-image">
+        <div class="image-overlay-text">
+          <h1>We're dedicated to providing our users with the best conversion rate</h1>
+          <h2>Fast & Efficient</h2><br>
+          <a href="#AdamPortal.html" class="cta-buttonve">Contact Us</a>
+        </div>
+      </div>
+      </section>
+      <section id="Login" class="loginbox-container">
+      <div class="loginbox-section">
+        <div class="logo-container">
+        <img src="Dolly.png" alt="company-logo" class="login-page-logo" />
+          <div class="head-of-loginpage">
+          <p>Dreal</p>
+          </div>
+        </div>
+          <div class="WELCOME">
+            <p>Welcome Back!</p>
+            <p>Sign in to use your account</p>
+          </div>
+          <div class="login-form">
+          <form>
+            <label>Email Address</label>
+            <input
+            type="email"
+            placeholder="e.g-adam45adan7@dreal.com"
+            required/>
+            <label>Password</label>
+            <input type="password" placeholder="Your password" required />
+            <button type="submit">Sign In</button>
+          </form>
+          </div>
+      </div>
+      </section>
+
+      <section id="Features" class="about-container">
+        <center><h2>Dreal is dedicated to providing you with the best rate</h2></center>
+        <div class="slide-container">
+          <div class="slides">
+            <div class="slide active">
+              <img src="bills.jpg" alt="Bill payment">
+              <div class="slide-caption">
+                <h3>Bill Payment</h3>
+                <p>Pay your bills, buy airtimes, and other online subscription</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="bank.jpg" alt="Bank Transfer">
+              <div class="slide-caption">
+                <h3>Bank Transfer</h3>
+                <p>Perform easy transfer, to your bank account (local or foreign)</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="onoff.jpg" alt="On/Off ramp">
+              <div class="slide-caption">
+                <h3>On/Off ramp</h3>
+                <p>Easily convert different crypto/currencies</p>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="slide">
+              <img src="memes.jpg" alt="Trade memecoins">
+              <div class="slide-caption">
+                <h3>Trade memecoins easily</h3>
+                <p>no need to send out crypto to trade memecoins, you can easily swap on our platform</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+          </div>
+          <!-- Manual Navigation Buttons -->
+          <button class="slider-btn prev-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="slider-btn next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+        <div class="how-our-app-works">
+          <h3>Our Features:</h3>
+          <div class="explanation-content">
+            <div class="explanation-point">
+              <i class="fas fa-images"></i>
+              <h4>Bank Transfer</h4>
+              <p>Dreal lets users easily send and receive money through bank transfers, making everyday payments simple and fast.</p>
+            </div>
+            <div class="explanation-point">
+              <i class="fas fa-play-circle"></i>
+              <h4>Fast Swap</h4>
+              <p>Users can swap and trade different crypto assets, including meme coins, directly through the platform.</p>
+            </div>
+            <div class="explanation-point">
+              <i class="fas fa-sliders-h"></i>
+              <h4>Bills Payment</h4>
+              <p>Dreal also allows users to pay bills such as airtime, data, electricity, and other everyday services.</p>
+            </div>
+            <div class="explanation-point">
+              <i class="fas fa-mouse-pointer"></i>
+              <h4>The Next Era</h4>
+              <p>Everything is brought together in one simple platform, giving users an easy way to manage both their money and crypto.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+         // Image Slider JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Slider elements
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            let currentSlide = 0;
+            let slideInterval;
+            
+            // Function to show a specific slide
+            function showSlide(n) {
+                // Reset all slides
+                slides.forEach(slide => {
+                    slide.classList.remove('active');
+                    slide.classList.remove('prev');
+                    slide.classList.remove('next');
+                });
+                
+                // Reset all dots
+                dots.forEach(dot => dot.classList.remove('active'));
+                
+                // Handle slide index boundaries
+                if (n >= slides.length) {
+                    currentSlide = 0;
+                } else if (n < 0) {
+                    currentSlide = slides.length - 1;
+                } else {
+                    currentSlide = n;
+                }
+                
+                // Show current slide and activate dot
+                slides[currentSlide].classList.add('active');
+                dots[currentSlide].classList.add('active');
+                
+                // Add prev/next classes for animation
+                let prevIndex = currentSlide - 1;
+                if (prevIndex < 0) prevIndex = slides.length - 1;
+                slides[prevIndex].classList.add('prev');
+                
+                let nextIndex = currentSlide + 1;
+                if (nextIndex >= slides.length) nextIndex = 0;
+                slides[nextIndex].classList.add('next');
+            }
+            
+            // Function for next slide
+            function nextSlide() {
+                showSlide(currentSlide + 1);
+            }
+            
+            // Function for previous slide
+            function prevSlide() {
+                showSlide(currentSlide - 1);
+            }
+            
+            // Start automatic sliding
+            function startSlider() {
+                slideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+            }
+            
+            // Stop automatic sliding
+            function stopSlider() {
+                clearInterval(slideInterval);
+            }
+            
+            // Event listeners for dots
+            dots.forEach(dot => {
+                dot.addEventListener('click', function() {
+                    const slideIndex = parseInt(this.getAttribute('data-slide'));
+                    showSlide(slideIndex);
+                    stopSlider();
+                    startSlider();
+                });
+            });
+            
+            // Event listeners for navigation buttons
+            prevBtn.addEventListener('click', function() {
+                prevSlide();
+                stopSlider();
+                startSlider();
+            });
+            
+            nextBtn.addEventListener('click', function() {
+                nextSlide();
+                stopSlider();
+                startSlider();
+            });
+            
+            // Pause slider on hover
+            const sliderContainer = document.querySelector('.slider-container');
+            sliderContainer.addEventListener('mouseenter', stopSlider);
+            sliderContainer.addEventListener('mouseleave', startSlider);
+            
+            // Initialize slider
+            showSlide(0);
+            startSlider();
+          });    
+      </script>
+  </body>
+</html>

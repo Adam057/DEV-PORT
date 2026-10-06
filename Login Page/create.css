@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+header {
+  padding: 0;
+  color: lightblue;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: gray(0, 0, 0, 0.1);
+}
+.container {
+  margin: auto;
+  padding: 0 15px;
+  width: auto;
+  max-width: 1200px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.logo-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.company-logo {
+  width: auto;
+  height: 70px;
+  border-radius: 8px;
+  display: block;
+}
+.company-name {
+  font-size: 40px;
+  font-weight: 700;
+  display: flex;
+  text-transform: uppercase;
+  color: lightblue;
+  margin: 0;
+  letter-spacing: 1px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin-left: 10px;
+  margin-top: 30px;
+}
+nav ul li a {
+  color: lightblue;
+  margin-left: 10px;
+  text-decoration: orange;
+  transition: all 0.3s;
+  padding: 5px 0;
+  position: relative;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: orange;
+}
+body {
+  background-color: lightblue;
+  line-height: 16px;
+  color: black;
+}
+.create-container {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+.createbox-container {
+  box-shadow: 0 5px 20px black;
+  margin-top: 50px auto;
+  width: 350px;
+  padding: 35px;
+  background-color: white;
+  border-radius: 8px;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px;
+}
+.companycreate-logo {
+  width: auto;
+  height: 50px;
+}
+.companycreate-name {
+  display: flex;
+  font-weight: bold;
+  font-size: 2rem;
+  color: lightblue;
+  margin-left: 5px;
+}
+.create-head {
+  margin-top: 15px;
+  text-align: center;
+  color: lightblue;
+  font-weight: 300;
+  font-size: 20px;
+}
+.create-head p {
+  margin-top: 15px;
+}
+.create-head p a {
+  color: gray;
+  font-weight: 200;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+.create-head p a:hover {
+  color: blue;
+}
+.information-form form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+}
+.information-form label {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: lightblue;
+  font-weight: bold;
+}
+.information-form input {
+  border: 1px solid black;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.information-form select {
+  padding: 8px;
+  margin-bottom: 13px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.information-form button {
+  padding: 10px;
+  background-color: lightblue;
+  color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid lightseagreen;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.information-form button:hover {
+  background-color: transparent;
+  color: orange;
+}
